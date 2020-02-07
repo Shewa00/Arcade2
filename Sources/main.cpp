@@ -1,7 +1,6 @@
 #include <QApplication>
 #include "game.h"
 #include "mainwindow.h"
-#include <QTest>
 #include "test_player.h"
 #include <iostream>
 #include <cstdlib>
@@ -12,9 +11,9 @@ MainWindow *Menu;
 
 int main(int argc, char *argv[])
 {
-    freopen("testing.log", "w", stdout);
+    //freopen("testing.log", "w", stdout);
     QApplication a(argc, argv);
-    QTest::qExec(new Test_Player, argc, argv);
+    //QTest::qExec(new Test_Player, argc, argv);
 
     game = new Game();
 
