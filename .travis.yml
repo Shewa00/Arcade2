@@ -16,5 +16,3 @@ jobs:
         - docker run -t -v $(pwd):/var/builder/ -w /var/builder --entrypoint ./scripts.sh $DOCKER_IMAGE
 
 
-notifications:
-  email: false
