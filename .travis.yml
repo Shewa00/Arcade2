@@ -6,6 +6,7 @@ services:
 
 before_script:
   - docker build . --tag arcade
+  - chmod 755 scripts/*.sh
 
 jobs:
   include:
