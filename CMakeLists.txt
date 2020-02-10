@@ -42,7 +42,7 @@ set(
 )
 set(
   ${PROJECT_NAME}_UI
-  mainwindow.ui
+  Sources/mainwindow.ui
 )
 set(
   ${PROJECT_NAME}_RESOURCE
