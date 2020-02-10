@@ -24,6 +24,10 @@
 
 ![Player](https://user-images.githubusercontent.com/47750099/74195890-43270b80-4c6d-11ea-9f66-f9aba89b862f.png),   <img width="21" alt="Снимок экрана 2020-02-11 в 2 12 26" src="https://user-images.githubusercontent.com/47750099/74199000-f561d180-4c73-11ea-94eb-6aa6021e0425.png">
 
+### Скриншот момента игры
+
+<img width="466" alt="Снимок экрана 2020-02-11 в 2 17 11" src="https://user-images.githubusercontent.com/47750099/74199210-9a7caa00-4c74-11ea-8e1d-79ddc620e9dd.png">
+
 
 
 
