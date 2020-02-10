@@ -100,7 +100,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
 if (BUILD_TESTS)
 
   add_executable(tests
-    tests/tests.cpp Sources/MainWindow.cpp
+    tests/tests.cpp Sources/mainwindow.cpp
 
     ${${PROJECT_NAME}_INCLUDE}
     ${${PROJECT_NAME}_UI}
