@@ -86,7 +86,7 @@ target_include_directories(
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-include_directories(include)
+include_directories(Sources)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES AUTOMOC TRUE)
 set_target_properties(${PROJECT_NAME} PROPERTIES AUTOUIC TRUE)
