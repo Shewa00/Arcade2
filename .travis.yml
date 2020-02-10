@@ -5,11 +5,12 @@ services:
   - dockers
 
 before_script:
-  - docker build . --tag arcade
   - chmod 755 scripts/*.sh
+  - chown 0:0 *
   - echo $(pwd)
   - ls -la
   - ls -la Content
+  - docker build . --tag arcade
 
 jobs:
   include:
