@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/tex">
+        <file alias="Bckg">Content/Background.png</file>
+        <file alias="Heart16">Content/heart pixel art 16x16.png</file>
+        <file alias="Heart32">Content/heart pixel art 32x32.png</file>
+        <file alias="Heart48">Content/heart pixel art 48x48.png</file>
+        <file alias="Heart64">Content/heart pixel art 64x64.png</file>
+        <file alias="Player">Content/Player.png</file>
+        <file alias="Enemy">Content/Enemy.png</file>
+        <file alias="Bullet">Content/Bullet.png</file>
+    </qresource>
+</RCC>
