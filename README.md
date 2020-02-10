@@ -22,7 +22,8 @@
 
 ### Ваш корабль и пуля 
 
-![Player](https://user-images.githubusercontent.com/47750099/74195890-43270b80-4c6d-11ea-9f66-f9aba89b862f.png), ![Bullet](https://user-images.githubusercontent.com/47750099/74195878-41f5de80-4c6d-11ea-9215-2347330f4300.png)
+![Player](https://user-images.githubusercontent.com/47750099/74195890-43270b80-4c6d-11ea-9f66-f9aba89b862f.png),   <img width="21" alt="Снимок экрана 2020-02-11 в 2 12 26" src="https://user-images.githubusercontent.com/47750099/74199000-f561d180-4c73-11ea-94eb-6aa6021e0425.png">
+
 
 
 
