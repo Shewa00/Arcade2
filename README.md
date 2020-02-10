@@ -20,6 +20,12 @@
 
 ![Enemy](https://user-images.githubusercontent.com/47750099/74195880-41f5de80-4c6d-11ea-824d-d0496e5b6cca.png)
 
+### Ваш корабль и пуля 
+
+![Player](https://user-images.githubusercontent.com/47750099/74195890-43270b80-4c6d-11ea-9f66-f9aba89b862f.png), ![Bullet](https://user-images.githubusercontent.com/47750099/74195878-41f5de80-4c6d-11ea-9215-2347330f4300.png)
+
+
+
 
 
 
