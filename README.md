@@ -26,6 +26,11 @@
 >>
 >><img width="550" alt="Снимок экрана 2020-02-11 в 2 24 06" src="https://user-images.githubusercontent.com/47750099/74199566-943afd80-4c75-11ea-9bf4-a41842a9c5de.png">
 
+>#### *Сборка на Travis CI*
+>
+><img width="1078" alt="Снимок экрана 2020-02-11 в 0 12 19" src="https://user-images.githubusercontent.com/47750099/74199773-33f88b80-4c76-11ea-98e5-2a5f213f732b.png">
+
+
 ## Скриншоты
 ### Вид начального меню 
 <img width="499" alt="Снимок экрана 2020-02-11 в 1 59 16" src="https://user-images.githubusercontent.com/47750099/74198333-217c5300-4c72-11ea-9849-c8e4f5761c32.png">
