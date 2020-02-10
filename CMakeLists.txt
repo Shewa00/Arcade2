@@ -46,7 +46,7 @@ set(
 )
 set(
   ${PROJECT_NAME}_RESOURCE
-  resources/resource.qrc
+  resource.qrc
 )
 
 set(GUI_TYPE)
