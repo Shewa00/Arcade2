@@ -6,6 +6,7 @@ extern MainWindow *Menu;
 
 Game::Game()
 {
+    Health=0;
 }
 
 void Game::DecreaseHealth()
