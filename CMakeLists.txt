@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(BUILD_TESTS Off)
 
-project(TrafficModel)
+project(Kursach)
 
 find_package(
   Qt5
