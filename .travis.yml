@@ -6,7 +6,7 @@ services:
 
 before_script:
   - chmod 755 scripts/*.sh
-  - chown 0:0 *
+  - sudo chown 0:0 *
   - echo $(pwd)
   - ls -la
   - ls -la Content
