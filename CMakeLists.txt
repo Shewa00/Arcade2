@@ -9,7 +9,7 @@ option(BUILD_TESTS Off)
 project(Kursach)
 
 find_package(
-  Qt5
+  Qt4
   HINTS "$ENV{QTDIR}"
   REQUIRED COMPONENTS
   Core
