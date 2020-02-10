@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "mainwindow.ui"
 #include "game.h"
 
 extern Game *game;
