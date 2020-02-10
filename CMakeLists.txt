@@ -19,14 +19,12 @@ find_package(
 
 set(
   ${PROJECT_NAME}_INCLUDE     
-        Sources/bullet.h 
-        Sources/enemy.h 
-        Sources/game.h       
-        Sources/health.h 
-        Sources/mainwindow.h 
-        Sources/player.h 
-        Sources/score.h 
-        Sources/test_player.h
+  Sources/bullet.h
+  Sources/enemy.h
+  Sources/game.h
+  Sources/health.h
+  Sources/player.h
+  Sources/score.h
 )
 set(
   ${PROJECT_NAME}_SOURCE
@@ -34,11 +32,8 @@ set(
   Sources/enemy.cpp 
   Sources/game.cpp 
   Sources/health.cpp 
-  Sources/main.cpp 
-  Sources/mainwindow.cpp 
-  Sources/player.cpp 
+  Sources/player.cpp
   Sources/score.cpp 
-  Sources/test_player.cpp
 )
 set(
   ${PROJECT_NAME}_UI
@@ -99,10 +94,12 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
 # Tests
 if (BUILD_TESTS)
 
+  enable_testing()
   add_executable(tests
     tests/tests.cpp Sources/mainwindow.cpp
 
     ${${PROJECT_NAME}_INCLUDE}
+    ${${PROJECT_NAME}_SOURCE}
     ${${PROJECT_NAME}_UI}
     ${${PROJECT_NAME}_RESOURCE}
     )
@@ -115,3 +112,15 @@ if (BUILD_TESTS)
   target_link_libraries(tests PUBLIC Qt5::Test ${PROJECT_NAME}Core)
 
 endif ()
+
+if (BUILD_COVERAGE)
+  set(ENABLE_COVERAGE ON CACHE BOOL "Enable coverage build." FORCE)
+  list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+  find_package(codecov)
+
+  add_coverage(${PROJECT_NAME})
+  add_coverage(tests)
+
+  list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
+  coverage_evaluate()
+endif()

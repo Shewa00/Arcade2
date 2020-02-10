@@ -1,13 +1,11 @@
-#include <QObject>
 #include <QTest>
 #include "game.h"
 #include "score.h"
-#include "mainwindow.h"
 #include "health.h"
+#include "mainwindow.h"
 #include "enemy.h"
 #include "player.h"
 #include "bullet.h"
-#include <iostream>
 
 class Test_Player: public QObject
 {
@@ -19,15 +17,17 @@ private slots:
     void testHealth();
     void testBullet();
     void testScore();
+    void testMainWindow();
     void testEnemy();
     void testPlayer();
 };
 
-
+Game *game;
 
 Test_Player::Test_Player(QObject *parent) :
     QObject(parent)
 {
+    game = new Game();
 }
 
 void Test_Player::testGame()
@@ -61,17 +61,16 @@ void Test_Player::testScore()
     QCOMPARE(score->GetScore(), 0);
 
 }
-/*void Test_Player::testMainWindow()
+void Test_Player::testMainWindow()
 {
-    MainWindow* m = new MainWindow();
+    MainWindow *m = new MainWindow();
     m->show();
     QCOMPARE(m->isVisible(), true);
     m->close();
     QCOMPARE(m->isVisible(), false);
     m->deleteLater();
-
 }
-*/
+
 void Test_Player::testHealth()
 {
     Health* heath1 = new Health(12);
@@ -110,3 +109,6 @@ void Test_Player::testPlayer()
     QCOMPARE(player1->getStartBulletPosition(), QPointF(44, -30));
 
 }
+
+QTEST_MAIN(Test_Player)
+#include "tests.moc"

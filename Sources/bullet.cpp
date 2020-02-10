@@ -7,7 +7,7 @@ Bullet::Bullet() {
     setPixmap(QPixmap(":/tex/Bullet"));
     setScale(1);
 
-    QTimer *timer = new QTimer(this);
+    auto *timer = new QTimer(this);
     timer->start(1);
     connect(timer, SIGNAL(timeout()), this, SLOT(Move()));
 }
