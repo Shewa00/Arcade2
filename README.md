@@ -39,7 +39,7 @@
 
 >> :four: Произведена непрерывная сборка проекта на Travis.CI
 
-   
+<img width="1078" alt="Снимок экрана 2020-02-11 в 0 12 19" src="https://user-images.githubusercontent.com/47750099/74200302-a7e76380-4c77-11ea-8d36-20f1dda97d52.png">   
 
 
 # Скриншоты
