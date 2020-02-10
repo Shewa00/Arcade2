@@ -42,7 +42,7 @@ set(
 )
 set(
   ${PROJECT_NAME}_UI
-  Sources/MainWindow.ui
+  Sources/mainwindow.ui
 )
 set(
   ${PROJECT_NAME}_RESOURCE
@@ -73,7 +73,7 @@ add_executable(
   ${GUI_TYPE}
 
   Sources/main.cpp
-  Sources/MainWindow.cpp
+  Sources/mainwindow.cpp
 
   ${${PROJECT_NAME}_INCLUDE}
   ${${PROJECT_NAME}_UI}
