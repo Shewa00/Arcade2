@@ -2,11 +2,14 @@ os: linux
 sudo: required
 language: "minimal"
 services:
-  - docker
+  - dockers
 
 before_script:
   - docker build . --tag arcade
   - chmod 755 scripts/*.sh
+  - echo $(pwd)
+  - ls -la
+  - ls -la Content
 
 jobs:
   include:
