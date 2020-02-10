@@ -42,7 +42,7 @@ set(
 )
 set(
   ${PROJECT_NAME}_UI
-  sources/MainWindow.ui
+  Sources/MainWindow.ui
 )
 set(
   ${PROJECT_NAME}_RESOURCE
@@ -72,8 +72,8 @@ add_executable(
   ${PROJECT_NAME}
   ${GUI_TYPE}
 
-  sources/main.cpp
-  sources/MainWindow.cpp
+  Sources/main.cpp
+  Sources/MainWindow.cpp
 
   ${${PROJECT_NAME}_INCLUDE}
   ${${PROJECT_NAME}_UI}
@@ -82,7 +82,7 @@ add_executable(
 
 target_include_directories(
   ${PROJECT_NAME} PUBLIC
-  ${CMAKE_CURRENT_SOURCE_DIR}/include
+  ${CMAKE_CURRENT_SOURCE_DIR}/Sources
   ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
@@ -100,7 +100,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
 if (BUILD_TESTS)
 
   add_executable(tests
-    tests/tests.cpp sources/MainWindow.cpp
+    tests/tests.cpp Sources/MainWindow.cpp
 
     ${${PROJECT_NAME}_INCLUDE}
     ${${PROJECT_NAME}_UI}
