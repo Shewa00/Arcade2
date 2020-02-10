@@ -1,12 +1,13 @@
 os: linux
 sudo: required
 language: "minimal"
+dist: bionic
 services:
   - dockers
 
 before_script:
   - chmod 755 scripts/*.sh
-  - sudo chown 0:0 *
+  - sudo chown 0:0 Content/*
   - echo $(pwd)
   - ls -la
   - ls -la Content
