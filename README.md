@@ -62,9 +62,6 @@
 
 
 
-![](https://i.imgur.com/SyrKRoq.png)
-
-
 
 
 
